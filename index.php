@@ -1,6 +1,6 @@
 <?php
-$BODY = array();
-$HEAD = array();
+$BODY = "";
+$HEAD = "";
 include "Shared/page.php";
 $pageName = "./index";
 include "$pageName/page.php";
