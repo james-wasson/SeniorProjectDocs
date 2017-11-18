@@ -1,19 +1,20 @@
 <?php
 $BODY = "";
 $HEAD = "";
-include "Shared/page.php";
+require "Shared/page.php";
 $pageName = "./index";
-include "$pageName/page.php";
+require "$pageName/page.php";
 echo 
 "<html>
   <head>";
-foreach $HEAD as $h{
-  echo $h;
+if (!empty($HEAD)) {
+  echo $HEAD;
 }
+echo 
 " </head>
   <body>";
-foreach $BODY as $b{
-  echo $b;
+if (!empty($BODY)) {
+  echo $HEAD;
 }
 echo
 " </body>
