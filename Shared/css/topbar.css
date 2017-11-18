@@ -1,0 +1,32 @@
+.navbar-header {
+  height: 65px !important
+}
+
+.navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 65px !important;
+}
+.navbar-brand-main {
+  font-size: 160%;
+  line-height: 45px !important;
+}
+.navbar-brand-secondary {
+  position:relative;
+  font-size: 100%;
+  bottom: 10px;
+  left: 10px;
+}
+
+
+.navbar-nav li a {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 65px !important;
+  height: 65px;
+}
+
+.topbar-about-dropdown li a {
+  line-height: 35px !important;
+  height: 35px;
+}
