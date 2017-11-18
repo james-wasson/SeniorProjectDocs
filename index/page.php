@@ -1,8 +1,8 @@
 <?php
-  
-  $HEAD = file_get_contents("./html/head.html");
-  $BODY = file_get_contents("./html/body.html");
+  $filepath = realpath(dirname(__FILE__));
+  $HEAD = file_get_contents("$filepath/html/head.html");
+  $BODY = file_get_contents("$filepath/html/body.html");
 if (empty($BODY)) {
-  $BODY = realpath(dirname(__FILE__));
+  $BODY = "AHHH";
 }
 ?>
