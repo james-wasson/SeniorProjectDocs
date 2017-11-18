@@ -1,16 +1,20 @@
 <?php
+$BODY = array();
+$HEAD = array();
+include "Shared/page.php";
 $pageName = "./index";
 include "$pageName/page.php";
 echo 
 "<html>
   <head>";
-if(!empty($HEAD))
-  echo $HEAD;
-echo 
+foreach $HEAD as $h{
+  echo $h;
+}
 " </head>
   <body>";
-if(!empty($BODY))
-  echo $BODY;
+foreach $BODY as $b{
+  echo $b;
+}
 echo
 " </body>
 </html>";
