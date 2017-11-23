@@ -1,24 +1,34 @@
 <?php
+// gets the page name from the url
+$pageName = "";
+if (is_null($_GET["pageName"]))
+  $pageName = "index";
+else
+  $pageName = $_GET["pageName"];
 // this sets the inclues path to here
-$pageName = "index";
 include_once __DIR__ . "/Shared/page.php";
 include_once __DIR__ . "/$pageName/page.php";
 echo 
 "<html>
   <head>";
-if (!empty($SHARED['CSS_topbar']))
-  echo $SHARED['CSS_topbar'];
 if (!empty($SHARED['HTML_includes']))
   echo $SHARED['HTML_includes'];
+if (!empty($SHARED['JS']))
+  echo $SHARED['JS'];
+if (!empty($SHARED['CSS']))
+  echo $SHARED['CSS'];
 if (!empty($CONTENT['HEAD']))
   echo $CONTENT['HEAD'];
 echo 
-" </head>
+"</head>
   <body>";
 if (!empty($SHARED['HTML_topbar']))
   echo $SHARED['HTML_topbar'];
+echo "<div id='content' class='container'>";
 if(!empty($CONTENT['BODY']))
   echo $CONTENT['BODY'];
+echo "</div>";
+echo dispSidebar($CONTENT);
 echo
 " </body>
 </html>";

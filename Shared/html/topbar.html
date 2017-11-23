@@ -1,29 +1,27 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="topbar">
    <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#side-topbar" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
         </button> 
-        <a href="#" class="navbar-brand">
+        <a href="index.php?pageName=index" class="navbar-brand">
           <div class="navbar-brand-main">AlphaNow</div>
           <div class="navbar-brand-secondary">Software Soltions</div>
         </a> 
      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+      <div class="collapse navbar-collapse" id="side-topbar">
          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Docs</a></li>
+            <li><a href="index.php?pageName=index"><span class="fa fa-home topbar-icon" aria-hidden="true" style="font-size:25px;"></span> Home</a></li>
+            <li><a href="index.php?pageName=docs"><span class="fa fa-file topbar-icon" aria-hidden="true" style="font-size:20px;"></span> Docs</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user-circle topbar-icon" aria-hidden="true" style="font-size:22px;"></span> Developers <span class="fa fa-caret-down" aria-hidden="true"></span></a>
               <ul class="dropdown-menu topbar-about-dropdown">
-                <li><a href="#">James Wasson</a></li>
+                <li><a href="index.php?pageName=wasson">James Wasson</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Yaozong Shen</a></li>
+                <li><a href="index.php?pageName=shen">Yaozong Shen</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Graham Turner</a></li>
+                <li><a href="index.php?pageName=turner">Graham Turner</a></li>
               </ul>
             </li>
          </ul>
