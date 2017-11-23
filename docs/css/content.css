@@ -40,9 +40,6 @@
   cursor: pointer;
 }
 
-.old-versions {
-}
-
 .old-version-heading {
   margin-top: 10px;
   margin-bottom: 5px;
@@ -51,7 +48,7 @@
   padding: 5px;
   width: 100%;
   color: white;
-  background-color: #337ab7;
+  background-color: #d9534f;
   font-size: 20px;
 }
 
