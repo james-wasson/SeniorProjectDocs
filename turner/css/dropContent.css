@@ -1,0 +1,88 @@
+.dev-drop {
+  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.bio {
+  vertical-align: middle;
+  display: inline-block;
+  width: 90%;
+}
+
+.bio-text {
+  font-weight: bold;
+  font-size: 18px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+}
+
+.bio-img {
+  width: 90%;
+}
+
+.contactHeader {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  margin-top: 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emailForm {
+  background-color: #C5EFF7;
+  padding-top: 15px;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emailSubject, .emailBody, .emailButtonGroup {
+  border-radius: 5px;
+  width: 65%;
+  margin: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.emailBody {
+  max-width: 65%;
+  height: 15vh;
+}
+
+.emailButtonGroup input {
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-color: black;
+}
+
+.emailButtonGroup input[type=reset] {
+  background-color: #d9534f;
+}
+
+.emailButtonGroup input[type=submit] {
+  background-color: #337ab7;
+}
+
+.githubContact {
+  background-color: #337ab7;
+  padding: 10px;
+  border-radius: 10px;
+  color: white !important;
+  cursor: pointer;
+}
+
+.noUnder {
+   text-decoration: none !important;
+}
+

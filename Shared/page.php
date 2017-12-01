@@ -9,4 +9,5 @@
   $SHARED['JS'] .= "<script src='./Shared/js/sidebar.js'></script>";
   $SHARED['JS'] .= "<script src='./Shared/js/dropdown.js'></script>";
   $SHARED['JS'] .= "<script src='./Shared/js/scrollToPageId.js'></script>";
+  $SHARED['JS'] .= "<script src='./Shared/js/email.js'></script>";
 ?>

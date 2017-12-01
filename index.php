@@ -1,10 +1,15 @@
 <?php
+// start the session if not already
+if (!session_id()){
+  session_start();
+}
 // gets the page name from the url
 $pageName = "";
 if (is_null($_GET["pageName"]))
   $pageName = "index";
 else
   $pageName = $_GET["pageName"];
+$_SESSION['CURR_PAGE'] = $pageName;
 // this sets the inclues path to here
 include_once __DIR__ . "/Shared/page.php";
 include_once __DIR__ . "/$pageName/page.php";

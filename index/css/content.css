@@ -1,0 +1,25 @@
+.index-content {
+  height: 55vh;
+  overflow: auto;
+  padding: 0px 20px;
+}
+
+.big-header {
+  font-size: 3em;
+  width: 81.5vw;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #337ab7;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+}
+
+#canvasTree {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

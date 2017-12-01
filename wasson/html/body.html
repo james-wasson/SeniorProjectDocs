@@ -6,12 +6,26 @@
 <div class="container innercontent">
   <div class="row">
     <div class="col">
-      <div class="section center">
+      <div class="section center dev-drop">
         <div class="dropdownButton dropdown-toggle" aria-expanded="false" data-toggle="about-drop" style="background-color:#d9534f;">
           <h2>Click Here To Read About Me <span class="caret-drop caret-about-drop fa fa-caret-down"></span></h2>
         </div>
         <div id="about-drop" class="dropdown-container" style="display: none;">
           <hr>
+          <div class="row bio">
+            <div class="col-md-6">
+              <p class="bio-text">
+                Hello,<br>
+                I am a student currently pursuing my bachelorette degree in Computer Science at Southern Illinois University of Carbondale. Prior to coming to SIUC I was a student at Southeastern Illinois College where I earned my associates in Computer Science.
+              </p>
+              <p class="bio-text">
+                Currently, I work part-time as a software developer for Potentia Analytics creating medical scheduling software. My interests mainly lie in Machine Learning, AI, and Application Development.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img class="bio-img" src="./wasson/wasson-picture.jpg" alt="Picture Of Me">
+            </div>
+          </div>
           <hr>
         </div>
       </div>
@@ -19,7 +33,7 @@
   </div>
   <div class="row">
     <div class="col">
-      <div class="section center">
+      <div class="section center dev-drop">
         <div class="dropdownButton dropdown-toggle" aria-expanded="false" data-toggle="resume-drop" style="background-color:#337ab7;">
           <h2>Click Here To View My Resume <span class="caret-drop caret-resume-drop fa fa-caret-down"></span></h2>
         </div>
@@ -33,13 +47,32 @@
   </div>
   <div class="row">
     <div class="col">
-      <div class="section center">
+      <div class="section center dev-drop">
         <div class="dropdownButton dropdown-toggle" aria-expanded="false" data-toggle="contact-drop" style="background-color:DarkGray;">
           <h2>Click Here To Contact Me <span class="caret-drop caret-contact-drop fa fa-caret-down"></span></h2>
         </div>
-        <div id="contact-drop" class="dropdown-container" style="display: none;">
+        <div id="contact-drop" class="dropdown-container container-fluid" style="display: none;">
           <hr>
+          <div class="row contactRow">
+            <div class="col">
+              <h2 class="contactHeader">Send Me An Email <i style="display: none; font-size: 30px;" class="fa fa-spinner fa-pulse fa-3x fa-fw" id="emailLoading"></i></h2>
+              <form id="sendEmail" class="emailForm">
+                <input class="emailSubject" type="text" id="emailSubject" placeholder="Subject">
+                <textarea class="emailBody" type="text" id="emailBody" placeholder="Content"></textarea>
+                <div class="emailButtonGroup">
+                  <input type="submit" value="Send Email">
+                  <input type="reset" value="Clear Email">
+                </div>
+              </form>
+            </div>
+          </div>
           <hr>
+          <div class="row">
+            <div class="col">
+              <a class="noUnder" href="https://github.com/james-wasson" target="_blank"><h2 class="contactHeader githubContact">View My GitHub Profile</h2></a>
+            </div>
+          </div>
+        <hr>
         </div>
       </div>
     </div>

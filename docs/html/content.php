@@ -1,26 +1,28 @@
 <?php
-  function getContentById(&$headings) {
+  function getContentById($headings) {
     global $DOC_PAGE_CONTENT;
-    foreach ($headings as $key => $h) {
-      $id = $h['id'];
-      if (!empty($DOC_PAGE_CONTENT[$id]))
-        $headings[$key]['content'] = $DOC_PAGE_CONTENT[$id];
-      else
-        unset($headings[$key]);
+    $cont = array();
+    foreach ($headings as $h) {
+      if (!empty($DOC_PAGE_CONTENT[$h])) {
+        $cont[$h]['content'] = $DOC_PAGE_CONTENT[$h];
+        $cont[$h]['title'] = $h;
+      } else {
+        unset($cont[$h]);
+      }
     }
-    return formatDocsPageContent($headings);
+    return formatDocsPageContent($cont);
   }
 
   function formatDocsPageContent($headings) {
     $returnStr = "<div class='container'>";
-    foreach ($headings as $key => $h) {
+    foreach ($headings as  $h) {
       $content = $h['content'];
-      $id = $h['id'];
+      $id = $h['title'];
       $title = $h['title'];
       $text = $h['content'][0]['text'];
       $version = $h['content'][0]['version'];
       $returnStr .= "<div class='row'>
-      <div class='section center container' id='$id'>
+      <div class='section center container' id='content-$title'>
           <div class='row'>
             <div class='heading col'>
               <span class='title'>$title</span>
@@ -64,7 +66,7 @@
   }
 
   $DOC_PAGE_CONTENT = array(
-  "123"=> array(
+  "h1"=> array(
     array(
     "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend, tellus sit amet malesuada condimentum, enim eros vestibulum velit, sit amet venenatis quam nibh ut magna. Pellentesque nisi dolor, interdum vel lobortis quis, egestas et magna. In porta pharetra lacus hendrerit fringilla. Vivamus imperdiet nunc vel sem aliquam feugiat. Phasellus pulvinar ac dolor vitae interdum. Vivamus in arcu sed risus ultrices tempus id nec augue. Sed consequat odio neque, eu ullamcorper nisl pharetra non. In eget efficitur elit.",
     "version" => "1.0.0"),
@@ -75,7 +77,7 @@
     "text" => "Curabitur sit amet dolor in augue bibendum dignissim. Nulla tortor velit, rutrum a auctor ut, cursus ac nisl. Ut ut ligula vel metus luctus vestibulum sit amet quis magna. Praesent finibus nisl vitae lacus ullamcorper suscipit. Fusce mattis a neque a fringilla. Praesent sed tincidunt sem, gravida porttitor enim. Mauris facilisis justo ex, vel molestie eros rhoncus vel. Praesent bibendum pretium condimentum. Sed porta ex ex, non semper metus posuere id. Fusce congue luctus enim ac bibendum. Fusce sit amet felis egestas, porttitor eros et, volutpat libero. Morbi gravida iaculis nunc quis rhoncus. Fusce fringilla volutpat ex consequat suscipit.",
     "version" => "0.0.1")
     ),
-   "1234"=> array(
+   "Hello Sunshine in the rain"=> array(
     array(
     "text" => "Quisque non tellus ac dolor tincidunt egestas egestas a ligula. Pellentesque dapibus porta turpis vitae consectetur. Pellentesque vitae lacus convallis, imperdiet dui quis, vehicula urna. Praesent lacinia libero sit amet congue fermentum. Nulla facilisi. Fusce lectus tellus, bibendum eget laoreet id, blandit vitae lorem. Morbi et leo ac ex semper dignissim.",
     "version" => "1.2.0"),
@@ -94,7 +96,7 @@
     "text" => "Curabitur sit amet dolor in augue bibendum dignissim. Nulla tortor velit, rutrum a auctor ut, cursus ac nisl. Ut ut ligula vel metus luctus vestibulum sit amet quis magna. Praesent finibus nisl vitae lacus ullamcorper suscipit. Fusce mattis a neque a fringilla. Praesent sed tincidunt sem, gravida porttitor enim. Mauris facilisis justo ex, vel molestie eros rhoncus vel. Praesent bibendum pretium condimentum. Sed porta ex ex, non semper metus posuere id. Fusce congue luctus enim ac bibendum. Fusce sit amet felis egestas, porttitor eros et, volutpat libero. Morbi gravida iaculis nunc quis rhoncus. Fusce fringilla volutpat ex consequat suscipit.",
     "version" => "0.0.1")
     ),
-    "123456"=> array(
+    "Adam Test ##2"=> array(
     array(
     "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend, tellus sit amet malesuada condimentum, enim eros vestibulum velit, sit amet venenatis quam nibh ut magna. Pellentesque nisi dolor, interdum vel lobortis quis, egestas et magna. In porta pharetra lacus hendrerit fringilla. Vivamus imperdiet nunc vel sem aliquam feugiat. Phasellus pulvinar ac dolor vitae interdum. Vivamus in arcu sed risus ultrices tempus id nec augue. Sed consequat odio neque, eu ullamcorper nisl pharetra non. In eget efficitur elit.",
     "version" => "1.0.0"),

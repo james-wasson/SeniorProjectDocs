@@ -1,21 +1,9 @@
 <?php
   $topicHeadings = array(
-  array(
-    "title" => "h1",
-    "id" => "123"
-  ),
-  array(
-    "title" => "Hello Sunshine in the rain",
-    "id" => "1234"
-  ),
-  array(
-    "title" => "12345",
-    "id" => "12345"
-  ),
-  array(
-    "title" => "Adam Test ##2",
-    "id" => "123456"
-  )
+    "h1",
+    "Hello Sunshine in the rain",
+    "12345",
+    "Adam Test ##2",
   );
   include __DIR__."/html/sidebar.php";
   include __DIR__."/html/content.php";

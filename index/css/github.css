@@ -1,0 +1,61 @@
+.projects {
+  width: 100%;
+  height: 35vh;
+  top: 55vh;
+  margin: 10px auto;
+  margin-top: 0;
+  position: absolute;
+}
+
+.git-repo {
+  width: 100%;
+  font-size: 25px !important; 
+  margin: 0;
+  border-top: 4px solid #337ab7;
+  overflow: auto;
+}
+
+.github-box {
+  height: 100%;
+}
+
+.github-box-header h3 {
+  font-size: 25px !important;
+}
+
+.github-box-download {
+  min-height: 40px;
+}
+
+.fallback {
+  height: 100%;
+
+  text-align: center;
+}
+
+.fallback .fallbackInner {
+  display: block;
+  border: 5px solid #337ab7;
+  border-radius: 5em;
+  height: 100%;
+  width: 40vw;
+  padding: 35px;
+  padding-top: 35px;
+  font-size: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #daa520;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.fallback .fallbackInner:hover {
+  padding: 30px;
+  border: 10px solid #337ab7;
+}
+
+.fallbackText {
+  margin-top: 10vh;
+}

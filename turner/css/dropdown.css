@@ -1,0 +1,65 @@
+.innercontent {
+  margin: 0;
+  width: inherit;
+}
+
+.dropdownButton {
+  width: 70%;
+  min-height: 7%;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  color:white;
+  padding-bottom: 10px;
+}
+
+.dropdownButton h2 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.dropdown-container {
+  padding-bottom: 10px;
+}
+.dropdown-container hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+	border-top: 1px solid #8c8b8b;
+}
+
+.section {
+  min-height: 10%;
+  margin-bottom: 20px;
+}
+
+.caret-drop {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: gold;
+}
+
+.about-title {
+  min-width: 80%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: #303030;
+  margin-bottom: 20px;
+}
+
+.about-title h1 {
+  font-weight:bold;
+  color: white;
+}
+
+.center {
+  margin-left: auto;
+  margin-right:auto;
+  text-align:center;
+}

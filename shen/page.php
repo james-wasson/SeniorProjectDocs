@@ -1,5 +1,9 @@
 <?php
-  $filepath = realpath(dirname(__FILE__));
   $CONTENT = array();
-  $CONTENT['BODY'] = file_get_contents("$filepath/html/body.html");
+  $CONTENT['HEAD'] = file_get_contents(__DIR__."/html/includes.html");
+  $CONTENT['HEAD'] .= "<script src='./shen/js/pdf.js'></script>";
+  $CONTENT['HEAD'] .= "<link rel='stylesheet' href='./shen/css/dropdown.css'></script>";
+  $CONTENT['HEAD'] .= "<link rel='stylesheet' href='./shen/css/dropContent.css'></script>";
+  $CONTENT['BODY'] = file_get_contents(__DIR__."/html/body.html");
+  $CONTENT['EMAIL'] = "yaozong.shen@siu.edu"
 ?>

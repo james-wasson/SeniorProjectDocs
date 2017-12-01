@@ -13,20 +13,27 @@ $().ready(function() {
   for (var i = 0; i < targets.length; i++)
     observer.observe(targets[i], { attributes: true });
   
+  // stores the state of each target, true for visable, false for hidden
+  var targetList = {};
   $(".dropdownButton").click(function() {
     var target = $(this).attr('data-toggle');
-    if ($("#"+target).is(":visible")) {
+    if (!(target in targetList))
+      targetList[target] = false;
+    if (targetList[target]) {
+      targetList[target] = false;
       $("#"+target)
-      .css('opacity', 1)
+      .stop( true )
       .slideUp(2000)
       .animate(
         { opacity: 0 },
-        { queue: false, duration: 1800 }
-      );
+        { queue: false, duration: 1800, 
+          complete: function() { delete targetList[target]; } // after close remove from taget list
+        });
       $(this).find(".fa-caret-up").removeClass("fa-caret-up").addClass("fa-caret-down");
     } else {
+      targetList[target] = true;
       $("#"+target)
-      .css('opacity', 0)
+      .stop( true )
       .slideDown(1800)
       .animate(
         { opacity: 1 },
