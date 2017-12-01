@@ -14,8 +14,8 @@
       $subject = $_GET["emailSubject"];
     $subject .= "\t" . date("Y-m-d h:i:sa");
     
-    $headers = 'From: noreply@page.com' . "\n" .
-    'Reply-To: noreply@page.com' . "\n" .
+    $headers = 'From: noreply@cs.siu.edu' . "\n" .
+    'Reply-To: noreply@cs.siu.edu' . "\n" .
     'X-Mailer: PHP/' . phpversion();
       
     if(mail($CONTENT['EMAIL'], $subject, $msg, $headers)) { // mail sent
