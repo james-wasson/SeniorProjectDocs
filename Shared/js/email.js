@@ -16,7 +16,7 @@ $().ready(function() {
     }).done(function(data) {
       var msg = $("#emailBody").val("");
       var sbj = $("#emailSubject").val("");
-      $('#sendEmail input[type=submit]').enable();
+      $('#sendEmail input[type=submit]').attr("disabled", false);
       toastr.success(data, "<h3 style='margin:0;padding:0;padding-left:10px;'>Success</h3>");
     })
     .fail(function(data) {
