@@ -146,7 +146,7 @@ $().ready(function() {
           }
         });
 
-      } else if( this.radius > 15 && this.radius < 16){
+      } else if( this.radius > initialRadius - (initialRadius * .3) && this.radius < initialRadius - (initialRadius * .2)){
             this.fillStyle = randomColor();
       }
     }
@@ -204,8 +204,8 @@ $().ready(function() {
     var frame = 0;
 
     // Snakes
-    var n = 22;
-    var initialRadius = width/80;
+    var n = 26;
+    initialRadius = width/90;
     snakes = new SnakeCollection($canvas);
     for (var i=0 ; i<n ; i++) {
       var snake = new Snake();
@@ -222,7 +222,7 @@ $().ready(function() {
       frame++;
     }, 0);
   }
-  
+  var initialRadius;
   var $canvas = $("canvas#canvastree");
   var canvas = $canvas[0];
   var context = canvas.getContext("2d");
