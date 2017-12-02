@@ -5,7 +5,7 @@ $emailJS = "<script type='text/javascript'>
     $('#sendEmail').submit(function(e) {
       e.preventDefault()
       var msg = $('#emailBody').val();
-      var sbj = $('#emailSubject').val();\n";
+      var sbj = $('#emailSubject').val() + '\t CS498/499';\n";
 if (!empty($CONTENT) && !empty($CONTENT['EMAIL']))
   $emailJS .= "var email = '" . $CONTENT['EMAIL'] . "'\n";
 else
