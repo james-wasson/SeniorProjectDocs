@@ -50,6 +50,23 @@
   font-size: 20px;
 }
 
+.info table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.info table td {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  vertical-align: middle;
+  white-space:normal
+}
+
 .view-older-versions {
   margin-left: 30px;
   margin-right: 30px;
