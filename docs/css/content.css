@@ -2,16 +2,35 @@
   width: 95%;
 }
 
-.section .heading {
-  background-color: #337ab7;
+.section .minor-heading {
+  background-color: #6C7A89;
   font-weight: bold;
   margin-top: 10px;
   border-radius: 10px;
 }
 
-.section .heading .title {
+.section .major-heading {
+  background-color: #337ab7;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  border-top: 2px solid black;
+}
+
+.section .major-heading hr {
+  margin: 0;
+}
+
+.section .heading .minor-title {
   padding-left: 10px;
-  font-size: 30px;
+  font-size: 25px;
+  color: white;
+}
+
+.section .heading .major-title {
+  font-size: 35px;
   color: gold;
 }
 

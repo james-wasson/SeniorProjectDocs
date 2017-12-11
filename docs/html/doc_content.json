@@ -1,0 +1,186 @@
+{
+  "Purpose": [{
+      "text": "This Project Definition Document provides a brief overview of Inventor Access Portal to promote a shared understanding of it before a more detailed Plan and Schedule are created.",
+      "version": "1.0.0"
+  }],
+  "Problem": [{
+      "text": "To allow associates of the Office of Technology Transfer are not able to access the data involving their current patent status or other information without first contacting the Office of Technology Transfer which can be time consuming and is not instantaneous. A lack of a proper email on the current servers can cause issues with identifying a project team member and often requires change throughout the life of the project which can cause confusion. ",
+      "version": "1.0.0"
+  }],
+  "Goal": [{
+    "text": "Create a website that can be used by inventors/project of the Office of Technology Transfer the ability to access their data without the need to contact someone from the office by email or phone. Allow the users of this web portal to change certain personal data on the server such as email.",
+    "version": "1.0.0"
+  }],
+  "Objectives": [{
+    "text": "<ul><li>Create a login page</li><li>Access and get data securely from the database</li><li>Display data in a style consistent with that of the Office of Technology Transfer</li><li>Display only data the user is authorized to view</li><li>Allow a user to change his/her email, username, and password</li><li>Facilitate the transfer of users into the system using a verification system</li></ul>",
+    "version": "1.0.0"
+   }],
+  "Scope": [{
+    "text": "<p>This document contains a description of the functionality for the website Inventor Access Portal&rdquo;, and within the sections below we have outlined what our end goal is and how to achieve that goal.</p><p>Description of some of the sections:</p><ul><li>Key stakeholders: Those with the largest investment in the project</li><li>Functional Requirements: What sort of functionalities should be included in the website, and what are the restrictions on those requirements</li><li>Non-functional Requirements: What is expected out of the website but is not an action taken</li><li>Technical requirements:What sort of technical specification must hold true on the website</li></ul>",
+    "version": "1.0.0"
+  }],
+  "Key Stakeholders": [{
+    "text": "<p>Michelle Chitambar</p><p>Kristy Owen</p>",
+    "version": "1.0.0"
+  }],
+  "Success Criteria": [{
+    "text": "This project should provide a website that is clear, concise, secure and provides all the data that is necessary for the licensing and patent information about the projects the user has. The product should also match the livery of the Office of Technology Transfer&rsquo;s main site. </p>",
+    "version": "1.0.0"
+  }],
+  "Assumptions": [{
+    "text": "<ul><li>Users must be currently in the system</li><li>Each user will have at least one project with either a pending or final status</li></ul>",
+    "version": "1.0.0"
+  }],
+  "Constraints": [{
+    "text": "<ul><li>Users must not be allowed to access data for a project they are not a part of</li><li>The database will not be modified heavily to support this web application</li><li>We must use an Access database</li></ul>",
+    "version": "1.0.0"
+  }],
+  "Risks": [{
+    "text": "<ul><li>There is not enough communication between both the developers and the stakeholders</li><li>Assumptions about being able to change certain database features</li><li>Scope/feature creep in the project</li></ul><p>We can mitigate these risks by discussing changes before being implemented and staying focused on the desired features of the webpage which are listed in this document.</p>",
+    "version": "1.0.0"
+  }],
+  "FR-1 Ability to log into the system": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-1 Ability to log into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow users to input their credentials and log into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This facilitates a strong security element in the webpage</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>A user&#39;s credentials should be validated securely</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-2 Ability to View Projects": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-2 Ability to View Projects</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow user to view projects that they are members of.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This is the one of the major purposes of the website</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>A user should never see projects they are not members of or a project they are connected through by project family</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-3 Ability to Sort Projects": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-3 Ability to Sort Projects</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow user to sort their projects by name, active/inactive status, and other fields</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>To be able to find data quickly and easily, thus boosting efficiency</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>Provide a clear and easy to understand way of sorting the projects by status, name, project number and other top-level fields.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-4 Ability to view different reports": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-4 Ability to view different reports</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow users to view different reports ran on their current projects</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>To provide clarity to the user about the data they are viewing</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><ul><li>The reports must be finished in a timely manner, I.E. not take more than 2 minutes</li><li>The reports should always have the project name that the report was run on clearly visible</li><li>The report should be in a printable format for the user</li><li>The report should not rely on a build in PDF view in the browser</li></ul></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-5 On login a confidentiality notice should be displayed": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-5 On login a confidentiality notice should be displayed</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>On login a confidentiality notice should be displayed</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>To be sure that a user has reviewed the confidentiality notice we will be displaying it before the user fully logs into the system. </p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><ul><li>The user must click accept to be logged into the system</li><li>The notice appears after credential validation</li></ul></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-6 Change their Password": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-6 Change their Password</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to change their password once they have logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This reduces the load on the Office of Technology Transfer to change the user&#39;s passwords</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>The password must meet the minimum criteria outlined in the Data Elements section.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-7 Change their Email": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-7 Change their Email</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to change their email once they have logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This allows for the Office of Technology Transfer to keep users contact information up to date</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>The email must meet the minimum criteria outlined in the Data Elements section.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-8 Change their Username": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-8 Change their Username</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to change their username once they have logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This reduces the load on the Office of Technology Transfer to change the user&#39;s username</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>The username must meet the minimum criteria outlined in the Data Elements section. </p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-9 Submit a new user form": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-9 Submit a new user form</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to submit a new user form if this is their first time logging into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This allows for the Office of Technology Transfer to add new users username, email, and password to the be database while maintaining password security and verifying the person is who they say they are.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>The user must have a project in the database in a active or inactive status</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-10 Recover a lost password": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-10 Recover a lost password</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to recover a password when lost using their email on file.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This reduces the load on the Office of Technology Transfer to change the user&#39;s password when they forget it.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>The automated password that is generated when a user requests has to be much stronger than the minimum password requirements set in the Data Elements section.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-11 Ability to View Project Reports": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-11 Ability to View Project Reports</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow user to view reports ran on projects they are members of</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This is the one of the major purposes of the website</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>The user should be able specify which report or reports to retrieve</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "FR-12 Print any reports generated by the website": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>FR-12 Print any reports generated by the website</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to easily print or export to a pdf any documents viewed on the webpage</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This can provide the user the ability to store hard copies of the documents on the website for their use.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>The user should easily be able to print documents or export to a pdf any report generated on the web page.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "NFR-1 Database access should be secure": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>NFR-1 Database access should be secure</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Database access should be secure</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>It&rsquo;s important to keep information about other users in the system secure at all times.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>Each login should use the minimum amount of data, you should never load multiple users into the system or store data in a non-secure way. </p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "NFR-2 The database should be modified to include login fields": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>NFR-2 The database should be modified to include login fields</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The database should be modified to include username, email, and password fields.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>In order to facilitate login these fields are necessary.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>The password should always be stored as an encrypted fields, I.E. not plain text</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "NFR-3 Login should be secured": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>NFR-3 Login should be secured</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Logging into the system should always be secure</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This would be the easiest place for a man in the middle attack to occur</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>Passwords should never be clearly sent across the network and data transfer should be encrypted.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "NFR-4 Look and feel should match parent website": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>NFR-4 Look and feel should match parent website</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The look and feel of the website should be professional and match the parent website located at http://siusystem.edu/tech-transfer/&rdquo;</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This gives the web portal some credibility and keeps the websites consistent.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>Major colors should match and the layout should be similar.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "NFR-5 A limited view of the family of the projects the user is a member of": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>NFR-5 A limited view of the family of the projects the user is a member of</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow a user who is a member of a project that is a member of a family access information of other projects in that family that the user is not a member of.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>Projects that are in families together sometimes relate and should have certain information display to the family members</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='1' rowspan='1'><p>Files in family member projects that have numbers like 3.xxxx.xxxx, the users should be able to see the file number, date, and activity</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "TR-1 System Availability": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>TR-1 System Availability</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The system should be available the majority of the time unless maintenance was scheduled</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This would allow the users access to their data without the need to often contact the the Office of Technology Transfer</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "TR-2 System Speed": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>TR-2 System Speed</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The system should not be egregiously slow at running all data gathering, logging in, and report generation.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This would keep users of the website happy and allow them to keep work efficiently.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "TR-3 Access Database": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>TR-3 Access Database</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The system should have a interface for access the current Access Database </p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>We could not gather user information or fulfill the purpose of the website without first meeting this requirement.</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-1 Ability to log into the system": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-1 Ability to log into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow users to input their credentials and log into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This facilitates a strong security element in the webpage</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>None</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user should input his or her credentials</li><li>Upon validation the user is logged into the system</li><li>If validation fails the user is given an error message</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>None</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-2 Ability to View Projects": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-2 Ability to View Projects</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow user to view projects that they are members of.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This is the one of the major purposes of the website</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must be logged in</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>Projects should loaded based on the user logged into the system and displayed</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>The user can now see the projects they have as well as status and other information</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-3 Ability to Sort Projects": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-3 Ability to Sort Projects</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow user to sort their projects by name, active/inactive status, and other fields</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>To be able to find data quickly and easily, thus boosting efficiency</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must be logged in and have the projects screen loaded</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user should click a easily identifiable button to sort the projects</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>The projects are now sorted</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-4 Ability to view different reports": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-4 Ability to view different reports</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow users to view different reports ran on their current projects</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>To provide clarity to the user about the data they are viewing</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must be logged in and have the projects screen loaded</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user should click a dropdown that lists the reports that can be ran on the project</li><li>On selected the report should be returned for the user to view</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>The user can now view the report</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-5 On login a confidentiality notice should be displayed": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-5 On login a confidentiality notice should be displayed</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>On login a confidentiality notice should be displayed</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>To be sure that a user has reviewed the confidentiality notice we will be displaying it before the user fully logs into the system. </p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The users credentials must be validated</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user enters a correct set of credentials</li><li>The user is then shown a confidentiality notice</li><li>The user must accept or be logged out of the system</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>The user is now fully logged into the system or logged out of the system</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-6 Change their Password": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-6 Change their Password</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to change their password once they have logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This reduces the load on the Office of Technology Transfer to change the user&#39;s passwords</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must be logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user must provide their current password</li><li>On verification a new password will be asked for and must meet password criteria,</li><li>Then the password will be hashed and replace the old password.</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>On success the user&#39;s password will be changed</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-7 Change their Email": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-7 Change their Email</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to change their email once they have logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This allows for the Office of Technology Transfer to keep users contact information up to date</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must be logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user must provide their current password</li><li>On verification a new email will be asked for and must meet email criteria.</li><li>A verification code will be sent to the new email and the user will be asked to type this code.</li><li>The email will then be changed.</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>On success the user&#39;s email will be changed</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-8 Change their Username": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-8 Change their Username</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to change their username once they have logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This reduces the load on the Office of Technology Transfer to change the user&#39;s username</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must be logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user must provide their current password</li><li>On verification a new username will be asked for and must meet username criteria.</li><li>The username will then be changed</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>On success the user&#39;s username will be changed</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-9 Submit a new user form": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-9 Submit a new user form</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to submit a new user form if this is their first time logging into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This allows for the Office of Technology Transfer to add new users username, email, and password to the be database while maintaining password security and verifying the person is who they say they are.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must have a project in the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user will fill out a form with name, DOB, and other identifying information, </li><li>the user will also specify a unique username. </li><li>The user information will be sent to the Office of Technology Transfer and a the user will be verified by using a email on file and a temporary password will be set.</li><li>On the user&#39;s next login with their specified username or email on file and temporary password, the user must set a new password.</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>The user can now login to the system with their username/email and password</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-10 Recover a lost password": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-10 Recover a lost password</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to recover their password using their email on file.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This reduces the load on the Office of Technology Transfer to change the user&#39;s password when they forget it.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must have already have signed into the website at least once and have a password, username, and email on file.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>When the user forgets their password, they must enter their DOB, name, username or email and other identifying features.</li><li>If the information entered was correct an email will be sent to their current email on file.</li><li>Upon receiving this email and verification that they have forgotten their password a temporary password will be randomly assigned.</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>The user can now login to the system with their username/email and auto-generated password</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-11 View Project Reports": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-11 View Project Reports</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>Allow user to view reports ran on projects they are members of</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This is the one of the major purposes of the website</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must be currently logged into the system</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user should specify which project</li><li>Then select which report to run</li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>The user can now view the report</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "UC-12 Print any reports generated by the website": [{
+    "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='1' rowspan='1'><p>UC-12 Print any reports generated by the website</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='1' rowspan='1'><p>The user should be able to easily print or export to a pdf any documents viewed on the webpage</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='1' rowspan='1'><p>This can provide the user the ability to store hard copies of the documents on the website for their use.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Users</p></td><td colspan='1' rowspan='1'><p>All users</p></td></tr><tr><td colspan='1' rowspan='1'><p>Precondition</p></td><td colspan='1' rowspan='1'><p>The user must request to view a project report</p></td></tr><tr><td colspan='1' rowspan='1'><p>Basic Course Of Events</p></td><td colspan='1' rowspan='1'><ul><li>The user should select an easily identifiable button to either print the document or save as pdf</li><li>If no errors occur then the document should be saved/printed </li></ul></td></tr><tr><td colspan='1' rowspan='1'><p>Postcondition</p></td><td colspan='1' rowspan='1'><p>The user now has the report saved as a hard copy or a soft copy</p></td></tr></tbody></table>",
+    "version": "1.0.0"
+  }],
+  "Data Elements Info": [{
+    "text": "<p>We will be using the current Access database used by the Office of Technology Transfer plus additional text fields, email, username, and password.</p>",
+    "version": "1.0.0"
+  }],
+  "Email": [{
+    "text": "<ul><li>Should be in form: user@domain.tld, where tld is top level domain</li><li>Should be Unique</li><li>Should be verified as safe, I.E. injection free</li></ul>",
+    "version": "1.0.0"
+  }],
+  "Username": [{
+    "text": "<ul><li>Should be Unique</li><li>Should be longer than 3 characters</li><li>Should be verified as safe, I.E. injection free</li></ul>",
+    "version": "1.0.0"
+  }],
+  "Password": [{
+    "text": "<ul><li>Should be sent as encrypted</li><li>Should be stored as encrypted</li><li>Should be longer than 5 characters</li><li>Should contain at least one special character (#,!,@,$,&amp;,?)</li><li>Password requirements subject to change</li></ul>",
+    "version": "1.0.0"
+  }]
+}

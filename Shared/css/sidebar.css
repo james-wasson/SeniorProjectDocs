@@ -70,9 +70,15 @@
   color: gold;
 }
 
-.top-sidebar ul li .sidebar-title {
+.top-sidebar ul li.sidebar-major-item .sidebar-title {
   font-size: 20px;
   font-weight:bold;
+}
+
+.top-sidebar ul li.sidebar-minor-item .sidebar-title {
+  font-size: 15px;
+  font-weight:bold;
+  padding-left: 10px;
 }
 
 .top-sidebar ul li .sidebar-pointers{
@@ -85,7 +91,12 @@
   align-items : center;
 }
 
-.top-sidebar ul li .sidebar-pointers .fa {
+.top-sidebar ul li.sidebar-major-item .sidebar-pointers .fa {
   font-size: 15px;
+  font-weight:bold;
+}
+
+.top-sidebar ul li.sidebar-minor-item .sidebar-pointers .fa {
+  font-size: 10px;
   font-weight:bold;
 }
