@@ -1,4 +1,4 @@
 
 function scrollToPageId(id) {
-  $("html, body").animate({ scrollTop: $('#'+id).offset().top }, 1000);
+  $("html, body").stop(true).animate({ scrollTop: $('#'+id).offset().top }, 1000);
 }
