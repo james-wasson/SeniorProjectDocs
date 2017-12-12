@@ -87,7 +87,6 @@
         }
       }
       $returnStr .= "</div>
-      </div>
       </div>";
     }
     // end if there are older versions
