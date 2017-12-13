@@ -14,7 +14,6 @@
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
-  padding: 5px;
   border-radius: 10px;
   border-top: 2px solid black;
 }
@@ -23,22 +22,27 @@
   margin: 0;
 }
 
-.section .heading .minor-title {
+.section .heading {
   padding-left: 10px;
+  padding-right:10px;
+}
+
+.section .heading .minor-title {
   font-size: 25px;
   color: white;
+  padding-left: 0;
 }
 
 .section .heading .major-title {
   font-size: 35px;
   color: gold;
+  position: relative;
 }
 
 .section .heading .current-version {
-  float: right;
-  padding-right: 10px;
   font-size: 20px;
-  color: white;
+  color: gold;
+  text-align: right;
 }
 
 .info {

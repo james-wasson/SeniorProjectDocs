@@ -142,6 +142,10 @@
     "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='3' rowspan='1'><p>NFR-5 A limited view of the family of the projects the user is a member of</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='3' rowspan='1'><p>Allow a user who is a member of a project that is a member of a family access information of other projects in that family that the user is not a member of.</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='3' rowspan='1'><p>Projects that are in families together sometimes relate and will have certain information display to the family members</p></td></tr><tr><td colspan='1' rowspan='1'><p>Specifications</p></td><td colspan='3' rowspan='1'><p>Files in family member projects that have numbers like 3.xxxx.xxxx, the users shall be able to see the file number, date, and activity</p></td></tr></tbody></table>",
     "version": "1.0.0"
   }],
+  "NFR-6 The bottom of each page should display a confidentiality notice": [{
+    "text": " <table > <tbody> <tr> <td colspan='1' rowspan='1'> <p>Name</p> </td> <td colspan='3' rowspan='1'> <p>NFR-6 The bottom of each page should display a confidentiality notice</p> </td> </tr> <tr> <td colspan='1' rowspan='1'> <p>Summary</p> </td> <td colspan='3' rowspan='1'> <p>In the footer of each a confidentiality notice should display visible but not intrusive fashion.</p> </td> </tr> <tr> <td colspan='1' rowspan='1'> <p>Rationale</p> </td> <td colspan='3' rowspan='1'> <p>This will make sure that the users of the system understand that the page is confidential and should be kept as such.</p> </td> </tr> <tr> <td colspan='1' rowspan='1'> <p>Specifications</p> </td> <td colspan='3' rowspan='1'> <p>The text should be kept in a easily modifiable file to allow for change of the notice.</p> </td> </tr> </tbody> </table>",
+    "version": "3.0.0"
+  }],
   "TR-1 System Availability": [{
     "text": "<table><tbody><tr><td colspan='1' rowspan='1'><p>Name</p></td><td colspan='3' rowspan='1'><p>TR-1 System Availability</p></td></tr><tr><td colspan='1' rowspan='1'><p>Summary</p></td><td colspan='3' rowspan='1'><p>The system shall be available the majority of the time unless maintenance was scheduled</p></td></tr><tr><td colspan='1' rowspan='1'><p>Rationale</p></td><td colspan='3' rowspan='1'><p>This would allow the users access to their data without the need to often contact the the Office of Technology Transfer</p></td></tr></tbody></table>",
     "version": "1.0.0"
@@ -217,5 +221,9 @@
   "Password": [{
     "text": "<ul><li>Should be sent as encrypted</li><li>Should be stored as encrypted</li><li>Should be longer than 5 characters</li><li>Should contain at least one special character (#,!,@,$,&amp;,?)</li><li>Password requirements subject to change</li></ul>",
     "version": "1.0.0"
+  }],
+  "Database Location Description": [{
+    "text": "<p>Three Access databases, all three of which are housed on the School of Medicine server.</p> <ul > <li >SIUC database contains all the projects invented by SIUC faculty/staff/students</li> <li >SIUE database contains all the projects invented by SIUE faculty/staff/students</li> <li >SIU School of Medicine database contains all the projects invented by SIU School of Medicine</li> </ul>",
+    "version": "3.0.0"
   }]
 }

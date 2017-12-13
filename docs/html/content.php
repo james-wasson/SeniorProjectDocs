@@ -58,8 +58,12 @@
     <div class='section center container' id='content-$id'>
         <div class='row'>
           <div class='heading minor-heading col'>
-            <span class='minor-title'>$title</span>
-            <span class='current-version'>Version: $version</span>
+            <div class='container'>
+            <div class='row'>
+              <div class='minor-title col-md-8'>$title</div>
+              <div class='current-version col-md-4'>Version: $version</div>
+            </div>
+            </div>
           </div>
           <div class='info col'>
             $text

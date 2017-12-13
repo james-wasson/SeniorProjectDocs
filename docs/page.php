@@ -46,7 +46,8 @@
       "NFR-2 The database shall be modified to include login fields",
       "NFR-3 Login will be secured",
       "NFR-4 Look and feel shall match parent website",
-      "NFR-5 A limited view of the family of the projects the user is a member of"
+      "NFR-5 A limited view of the family of the projects the user is a member of",
+      "NFR-6 The bottom of each page should display a confidentiality notice"
     ),
     "Technical Requirements" => array (
       "TR-1 System Availability",
@@ -72,6 +73,9 @@
       "Email",
       "Username",
       "Password"
+    ),
+    "Definitions" => array (
+      "Database Location Description"
     )
   );
   include __DIR__."/html/sidebar.php";
