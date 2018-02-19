@@ -13,7 +13,14 @@
       <div class="collapse navbar-collapse" id="side-topbar">
          <ul class="nav navbar-nav">
             <li><a href="index.php?pageName=index"><span class="fa fa-home topbar-icon" aria-hidden="true" style="font-size:25px;"></span> Home</a></li>
-            <li><a href="index.php?pageName=docs"><span class="fa fa-file topbar-icon" aria-hidden="true" style="font-size:20px;"></span> Docs</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-file topbar-icon" aria-hidden="true" style="font-size:22px;"></span> Docs <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu topbar-about-dropdown">
+                <li><a href="index.php?pageName=description">Description</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="index.php?pageName=plan">Plan</a></li>
+              </ul>
+            </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user-circle topbar-icon" aria-hidden="true" style="font-size:22px;"></span> Developers <span class="fa fa-caret-down" aria-hidden="true"></span></a>
               <ul class="dropdown-menu topbar-about-dropdown">
