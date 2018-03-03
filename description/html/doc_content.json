@@ -219,7 +219,7 @@
     "version": "1.0.0"
   }],
   "Password": [{
-    "text": "<ul><li>Should be sent as encrypted</li><li>Should be stored as encrypted</li><li>Should be longer than 5 characters</li><li>Should contain at least one special character (#,!,@,$,&amp;,?)</li><li>Password requirements subject to change</li></ul>",
+    "text": "<ul><li>Should be sent as encrypted</li><li>Should be stored as encrypted</li><li>Password requirements should match SIU password standards located <a href=\"http://registrar.siu.edu/faculty/passwordrules.php\" target=\"_blank\">here</a></li></ul>",
     "version": "1.0.0"
   }],
   "Database Location Description": [{
